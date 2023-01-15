@@ -19,7 +19,7 @@ function addFallingText() {
   var text = document.createElement("div");
   text.innerHTML = "🖕";
   text.classList.add("falling-text");
-  text.style.fontSize ="30px" 
+  text.style.fontSize ="40px" 
   text.style.left = Math.random() * (window.innerWidth - text.clientWidth) + "px";
   document.body.appendChild(text);
   fallingTextArr.push(text);
