@@ -1,14 +1,53 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <div>
-        thund
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="image-container"></div>
     </div>
-    
-</body>
+    <script>
+      var imageUrls = [
+        "https://media1.giphy.com/media/44Eq3Ab5LPYn6/200.webp?cid=ecf05e47b5u93q96ld38luqvw5qtjyqawdtstkvz3btpb2sg&rid=200.webp&ct=g",
+        "https://media3.giphy.com/media/hTCp28zfmxc9ig9nCc/200w.webp?cid=ecf05e47b5u93q96ld38luqvw5qtjyqawdtstkvz3btpb2sg&rid=200w.webp&ct=g",
+        "https://media2.giphy.com/media/8FVEaTui9MLNjBdjBm/200.webp?cid=ecf05e47b5u93q96ld38luqvw5qtjyqawdtstkvz3btpb2sg&rid=200.webp&ct=g",
+        "https://media3.giphy.com/media/3og0ITD13IcMrZ1p4Y/200.webp?cid=ecf05e47izt3o30cb58klzo6bw43ijub7w5f2sk6nwahxnf5&rid=200.webp&ct=g",
+        "https://media4.giphy.com/media/d3mmlxRcHAf4kMgw/200w.webp?cid=ecf05e47izt3o30cb58klzo6bw43ijub7w5f2sk6nwahxnf5&rid=200w.webp&ct=g",
+        "https://media1.giphy.com/media/26xBLRMQaRxqm3WGA/200w.webp?cid=ecf05e47izt3o30cb58klzo6bw43ijub7w5f2sk6nwahxnf5&rid=200w.webp&ct=g",
+        "https://media0.giphy.com/media/l0HlIxiMD8uhg1r9e/200w.webp?cid=ecf05e47tjxl4drouiphe8148w204vc1wpgjanhttyzsaemy&rid=200w.webp&ct=g",
+        "https://media3.giphy.com/media/3ohzdXtGoFIDyMoisM/200w.webp?cid=ecf05e4792cmqe7ujo318p459xvtocoulwbq7grfq1d5vjjy&rid=200w.webp&ct=g",
+        "https://media3.giphy.com/media/8OJ8T0ZXF7BG8/100.webp?cid=ecf05e474do51con2bw0uvltsih1o3rckgnet91164sddhnp&rid=100.webp&ct=g",
+        "https://media4.giphy.com/media/7jtgsCQRfZKN2/giphy.webp?cid=ecf05e47rez383hxdlnfc5irewta1zjeu1esi4isypz5z6gf&rid=giphy.webp&ct=g",
+        "https://media1.giphy.com/media/oFCEGYv0ZY5WvSkZF4/200.webp?cid=ecf05e47svowllnr4xvskava20mtn9psetefhrwwumtsb89n&rid=200.webp&ct=g",
+        "https://media1.giphy.com/media/jbrxKXK5ce5SE/200.webp?cid=ecf05e47hdzj590w997z4du1nk61yokfpvkjs0uuobg3a7c0&rid=200.webp&ct=g",
+        "https://media0.giphy.com/media/DfPAA2aHGeTFpmVB0W/200w.webp?cid=ecf05e47hdzj590w997z4du1nk61yokfpvkjs0uuobg3a7c0&rid=200w.webp&ct=g",
+        "https://media1.giphy.com/media/l378qjkYsZzQAeB3y/giphy.webp?cid=ecf05e472cqs7wml5e6lnww8106cnsuokiic6ewdoxglq7qf&rid=giphy.webp&ct=g",
+
+
+      ];
+      var imageContainer = document.getElementById("image-container");
+
+      for (var i = 0; i < imageUrls.length; i++) {
+        var img = document.createElement("img");
+        img.src = imageUrls[i];
+        imageContainer.appendChild(img);
+      }
+    </script>
+  </body>
+  <style>
+    #image-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    img {
+      width: auto;
+      height: 100px;
+      margin:10px;
+    }
+  </style>
 </html>
